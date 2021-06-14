@@ -28,7 +28,7 @@
                     <a class="nav-link" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="views/instructores.html">Instructores</a>
+                    <a class="nav-link" href="./instructores.html">Instructores</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -47,7 +47,85 @@
     </nav>
     <br>
     <div class="container">
-        
+        <div class="row" >
+            <div class="col-6 offset-3" >
+                <fieldset>
+                    <legend>Formulario de registro</legend>
+                    <form action="http://127.0.0.1:5500/aweb.750.cursos/RecibirDatos" method="POST" >
+                        <ul style="list-style: none;" >
+                            <li>
+                                <label for="nombre">Nombre: </label>
+                                <input type="text" name="nombre" id="nombre" >
+                            </li>
+                            <li>
+                                <label for="primerApellido">Primer apellido:</label>
+                                <input type="text" name="primerApellido" id="primerApellido" >
+                            </li>
+                            <li>
+                                <label for="segundoApellido">Segundo apellido:</label>
+                                <input type="text" name="segundoApellido" id="segundoApellido" >
+                            </li>
+                            <li>
+                                <label for="#">Tipo de Modalidad: </label>
+
+                                <input type="checkbox" id="presencial" value="Presencial" name="modalidad" >
+                                <label for="presencial">Presencial</label>
+
+                                <input type="checkbox" id="remoto" value="Remoto" name="modalidad">
+                                <label for="remoto">Remoto</label>
+
+                                <input type="checkbox" id="mixto" value="Mixto" name="modalidad" >
+                                <label for="mixto">Mixto</label>
+                            </li>
+                            <li>
+                                <label for="#">Sexo:</label>
+
+                                <input type="radio" name="sexo" id="hombre" value="hombre">
+                                <label for="hombre">Hombre</label>
+
+                                <input type="radio" name="sexo" id="mujer" value="mujer">
+                                <label for="mujer">Mujer</label>
+                            </li>
+                            <li>
+                                <label for="curso">Curso: </label>
+                                <select name="curso" id="curso">
+                                    <option value="0">Seleccione...</option>
+                                    <option value="1">Creatividad y Diseño</option>
+                                    <option value="2">Database system</option>
+                                    <option value="3">Aplicaciones móviles con Android</option>
+                                    <option value="4">Finanzas corporativas</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="observaciones">Observaciones:</label>
+                                <br>
+                                <textarea style="resize: none;" name="observaciones" id="observaciones" cols="60" rows="10"></textarea>
+                            </li>
+                            <li>
+                                <input type="submit" value="Registrar" name="registrar" id="registrar" >
+                                <input type="reset" value="Cancelar" name="reset" id="reset">
+                            </li>
+                        </ul>
+                        http://127.0.0.1:5500/aweb.750.cursos/RecibirDatos
+                        ?
+                        nombre=Jose
+                        &primerApellido=Narvaez
+                        &segundoApellido=Figueroa
+                        &modalidad=Presencial
+                        &modalidad=Remoto
+                        &sexo=hombre
+                        &curso=1.
+                        &observaciones=Prueba
+                        &registrar=Registrar
+                        
+
+
+                    </form>
+
+
+                </fieldset>
+            </div>
+        </div>
     </div>
 
 
